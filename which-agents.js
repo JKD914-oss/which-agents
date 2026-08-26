@@ -2,8 +2,8 @@
 'use strict';
 
 const path = require('node:path');
-const pkg = require('../package.json');
-const { DEFAULT_MAX_BYTES, resolveInstructions } = require('../lib/resolver');
+const pkg = require('./package.json');
+const { DEFAULT_MAX_BYTES, resolveInstructions } = require('./resolver');
 
 const HELP = `which-agents ${pkg.version}
 

@@ -9,7 +9,7 @@
 需要 Node.js 18 或更高版本。
 
 ```bash
-node bin/which-agents.js src/api/user.ts
+node which-agents.js src/api/user.ts
 ```
 
 将包发布到 npm 后，也可以直接运行 `npx which-agents-md path/to/file`。
@@ -42,7 +42,7 @@ which-agents --no-global path/to/file
 
 ## 发布
 
-推送 `v0.1.0` 这样的 Git 标签后，仓库内置的 GitHub Actions 会在 macOS、Windows、Linux 上运行测试，并自动创建 GitHub Release。
+测试通过后，可以用 `v0.1.1` 标签创建 GitHub Release。
 
 ## 许可证
 

@@ -1,21 +1,21 @@
 {
   "name": "which-agents-md",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Show which AGENTS.md instructions apply to any file in a repository.",
   "license": "MIT",
   "author": "which-agents contributors",
   "bin": {
-    "which-agents": "bin/which-agents.js"
+    "which-agents": "which-agents.js"
   },
   "files": [
-    "bin",
-    "lib",
+    "which-agents.js",
+    "resolver.js",
     "README.md",
     "LICENSE"
   ],
   "scripts": {
-    "test": "node --test",
-    "check": "node --check bin/which-agents.js && node --check lib/resolver.js && npm test"
+    "test": "node --test resolver.test.js",
+    "check": "node --check which-agents.js && node --check resolver.js && npm test"
   },
   "engines": {
     "node": ">=18"

@@ -6,7 +6,7 @@ const path = require('node:path');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 
-const { findProjectRoot, resolveInstructions } = require('../lib/resolver');
+const { findProjectRoot, resolveInstructions } = require('./resolver');
 
 function fixture() {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'which-agents-'));

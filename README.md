@@ -13,7 +13,7 @@ Large repositories often contain several nested `AGENTS.md` files. The effective
 Requires Node.js 18 or newer.
 
 ```bash
-node bin/which-agents.js src/api/user.ts
+node which-agents.js src/api/user.ts
 ```
 
 After publishing the package to npm, it can also run without cloning:
@@ -77,11 +77,11 @@ npm run check
 
 ## Release
 
-Push a tag such as `v0.1.0`. The included GitHub Actions workflow tests on macOS, Windows, and Linux, builds the npm tarball, and attaches it to a GitHub Release.
+Create a GitHub Release from a tag such as `v0.1.1` after the tests pass.
 
 ```bash
-git tag v0.1.0
-git push origin v0.1.0
+git tag v0.1.1
+git push origin v0.1.1
 ```
 
 ## License
